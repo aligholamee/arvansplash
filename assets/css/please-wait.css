@@ -86,8 +86,10 @@ body.pg-loading {
 }
 /* line 86, ../src/please-wait.scss */
 .pg-loading-screen .pg-loading-logo-header img {
-  max-height: 25%;
-  max-width: 25%;
+  max-height: 60%;
+  max-width: 60%;
+  min-height: 20%;
+  min-width: 20%;
   display: inline-block !important;
 }
 /* line 91, ../src/please-wait.scss */
