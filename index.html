@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="AngularApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="assets/css/please-wait.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/please-wait.min.js"></script>
+</head>
+
+
+<div class="container">
+    <div class="row row-centered pos">
+        <div class="col-lg-8 col-xs-12 col-centered">
+            <div class="well"></div>
+        </div>
+        <div class="col-lg-8 col-xs-12 col-centered">
+            <div class="well"></div>
+        </div>
+        <div class="col-lg-8 col-xs-12 col-centered">
+            <div class="well"></div>
+        </div>
+    </div>
+</div>
+
+<body ng-controller="MainCtrl">
+    <div class="container">
+        <div class="row row-centered pos">
+            <div class="col-lg-8 col-xs-12 col-centered">
+                <div class="inner" ng-view>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 col-xs-12 col-centered">
+            <script type="text/javascript">
+                window.loading_screen = window.pleaseWait({
+                    logo: "assets/images/new-logo-main.png",
+                    backgroundColor: '#00baba',
+                    loadingHtml: "<p class='loading-message'>Security Analysis & DDoS Protection.</p>"
+                });
+            </script>
+        </div>
+    </div>
+
+    <script src="https://lib.arvancloud.com/ar/angular.js/1.6.5/angular.min.js"></script>
+    <!-- If we include the rest of our JS after we call pleaseWait, users get a loading page while it downloads. 
+    Of course, this is optional and up to you. It may be desired if your combined JS is of a larger size. If not,
+    feel free to include PleaseWait in your normal minified JS file, and call pleaseWait when first possible. -->
+    <script src="assets/js/default.min.js"></script>
+</body>
+
+</html>
