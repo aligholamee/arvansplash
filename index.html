@@ -4,19 +4,18 @@
     <title>من ربات نيستم</title>
     <script src="assets/js/pace.js"></script>
     <link href="assets/css/pace-theme-corner-indicator.css" rel="stylesheet" />
+    <link href="assets/css/please-wait.css" rel="stylesheet">
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <div id="range">
-        <img src="new-logo-main.png" class="ri" />
-        <script>
-            range.addEventListener('input', function () {
-                document.querySelector('.pace').classList.remove('pace-inactive');
-                document.querySelector('.pace').classList.add('pace-active');
-            });
-        </script>
-    </div>
+    <script type="text/javascript">
+        window.loading_screen = window.pleaseWait({
+            logo: "assets/images/logo.png",
+            backgroundColor: '#f46d3b',
+            loadingHtml: "<p class='loading-message'>A good day to you fine user!</p>"
+        });
+    </script>
 
 </body>
 
