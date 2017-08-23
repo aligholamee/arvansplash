@@ -8,25 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
     <link href="assets/css/please-wait.css" rel="stylesheet">
     <link href="assets/css/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pace-theme-bounce.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/pace.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/please-wait.min.js"></script>
+
 </head>
-
-
-<div class="container">
-    <div class="row row-centered pos">
-        <div class="col-lg-8 col-xs-12 col-centered">
-            <div class="well"></div>
-        </div>
-        <div class="col-lg-8 col-xs-12 col-centered">
-            <div class="well"></div>
-        </div>
-        <div class="col-lg-8 col-xs-12 col-centered">
-            <div class="well"></div>
-        </div>
-    </div>
-</div>
 
 <body ng-controller="MainCtrl">
     <div class="container">
@@ -36,7 +26,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-lg-8 col-xs-12 col-centered">
             <script type="text/javascript">
                 window.loading_screen = window.pleaseWait({
@@ -47,12 +36,6 @@
             </script>
         </div>
     </div>
-
-    <script src="https://lib.arvancloud.com/ar/angular.js/1.6.5/angular.min.js"></script>
-    <!-- If we include the rest of our JS after we call pleaseWait, users get a loading page while it downloads. 
-    Of course, this is optional and up to you. It may be desired if your combined JS is of a larger size. If not,
-    feel free to include PleaseWait in your normal minified JS file, and call pleaseWait when first possible. -->
-    <script src="assets/js/default.min.js"></script>
 </body>
 
 </html>
