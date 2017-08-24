@@ -97,7 +97,9 @@ canvas{
 }
 
 #arvanLogo {
-  width: 15%;
-  height: 15%;
-  z-index: +1;
+  max-height: 30%;
+  max-width: 30%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  position: fixed;
 }
