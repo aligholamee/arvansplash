@@ -110,8 +110,6 @@ canvas{
 }
 
 .spinner {
-  max-width: 10%;
-  max-height: 10%;
   top: 70%;
   margin-top: 25px;
   position: fixed ;
