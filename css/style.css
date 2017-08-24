@@ -160,3 +160,20 @@ canvas{
   color: white;
   font-size: 20px;
 }
+
+
+#login-footer {
+  background: transparent;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: #fafafa;
+  position: fixed;
+  margin-right: 0px;
+  height: auto;
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 5px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+}
